@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/typing_modulev2" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
