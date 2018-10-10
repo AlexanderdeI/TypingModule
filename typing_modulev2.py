@@ -29,6 +29,7 @@ from PyQt5.QtWidgets import QAction
 from .resources import *
 # Import the code for the dialog
 from .typing_modulev2_dialog import TypingModuleV2Dialog
+from .typing_menu import TypingMenu
 import os.path
 
 
@@ -183,13 +184,5 @@ class TypingModuleV2:
 
 
     def run(self):
-        """Run method that performs all the real work"""
-        # show the dialog
-        self.dlg.show()
-        # Run the dialog event loop
-        result = self.dlg.exec_()
-        # See if OK was pressed
-        if result:
-            # Do something useful here - delete the line containing pass and
-            # substitute with your code.
-            pass
+        self.dlg = TypingMenu(self.iface)
+        self.dlg.showMaximized()
