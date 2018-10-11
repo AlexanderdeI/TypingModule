@@ -18,7 +18,7 @@ class PhotoViewer(QGraphicsView):
         self.scene = QGraphicsScene()
         self.setScene(self.scene)
 
-        self.photo_base_dir = None
+        self.photo_base_dir = ''
         self.pixmap_photo = QPixmap()
         self.current_photo = None
         self.zoom = BASE_ZOOM
