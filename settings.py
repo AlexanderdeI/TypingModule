@@ -1,3 +1,5 @@
+from datetime import date
+
 PROJECT_PATH = 'Z:\!Cemeteries\_QGIS'
 PHOTO_POSITION = 'LEFT' # RIGHT или LEFT
 MAX_PHOTO_ZOOM = 15
@@ -6,6 +8,12 @@ BASE_ZOOM = 1
 MIN_ZOOM = 0.15
 
 GPKG_LAYER_NAME = 'graves'
+
+AUTOSAVE_TIME = 10.0
+AUTOCOMPLETE_CENTURY = 20
+MIN_YEAR = 1700
+MAX_AGE = 130
+TODAY = date.today()
 
 # Имена полей
 SURNAME = 'surname'
